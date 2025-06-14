@@ -1,6 +1,6 @@
 
 import ScrollFloat from "../../DesignComponents/ScrollFloat/ScrollFloat.jsx";
-
+import SpotlightCard from "../../DesignComponents/SpotlightCard/SpotlightCard.jsx";
 export default function AboutSection() {
   return (
     <>
@@ -27,8 +27,30 @@ export default function AboutSection() {
 
         </div>
       </header>
-      <main className="flex flex-col items-center justify-center min-h-[calc(100vh-200px)] border"> 
-        <p>asd</p>
+      <main className="flex flex-col items-center justify-center h-[calc(100vh-200px)]  max-w-6xl mx-auto"> 
+        <div className="grid w-full h-full grid-flow-col grid-rows-2 gap-4 ">
+            <div className="row-span-2 ">
+              <SpotlightCard className="w-full h-full custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                <p>Content 1</p>
+              </SpotlightCard>
+            </div>
+            <div className="col-span-1 ">
+              <SpotlightCard className="w-full h-full custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                <p>Content 2</p>
+              </SpotlightCard>
+            </div>
+            <div className="col-span-2 ">
+              <SpotlightCard className="w-full h-full custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                <p>Content 3</p>
+              </SpotlightCard>
+            </div>
+            <div className="col-span-1 ">
+              <SpotlightCard className="w-full h-full custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                <p>Content 4</p>
+              </SpotlightCard>
+            </div>
+
+        </div>
 
       </main>
     </>
