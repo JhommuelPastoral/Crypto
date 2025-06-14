@@ -1,5 +1,4 @@
-import GooeyNav from '../../Reactbits/GooeyNav/GooeyNav.jsx'
-import { Button } from './ui/button.jsx';
+import GooeyNav from '../../DesignComponents/GooeyNav/GooeyNav.jsx'
 export default function LandingPage() {
 const items = [
   { label: "Home", href: "#home" },
@@ -15,7 +14,7 @@ const items = [
 
   return (
 
-    <div className="relative overflow-hidden font-Sora text-sm max-w-5xl mx-auto flex justify-center items-center mt-6 p-3 rounded-xl shadow-md border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl transition-all duration-300 hover:shadow-lg hover:border-white/30">    
+    <div className="relative flex items-center justify-center max-w-5xl p-3 mx-auto mt-6 overflow-hidden text-sm transition-all duration-300 border shadow-md font-Sora rounded-xl border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl hover:shadow-lg hover:border-white/30">    
       <GooeyNav
         items={items}
         particleCount={15}
