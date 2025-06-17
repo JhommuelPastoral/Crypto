@@ -2,11 +2,11 @@ import { useRef, useEffect, useState } from "react";
 
 const GooeyNav = ({
   items,
-  animationTime = 600,
+  animationTime = 200,
   particleCount = 15,
   particleDistances = [90, 10],
   particleR = 100,
-  timeVariance = 300,
+  timeVariance = 100,
   colors = [1, 2, 3, 1, 2, 3, 1, 4],
   initialActiveIndex = 0,
 }) => {
@@ -271,7 +271,7 @@ const GooeyNav = ({
       </style>
       <div className="relative" ref={containerRef}>
         <nav
-          className="flex relative"
+          className="relative flex"
           style={{ transform: "translate3d(0,0,0.01px)" }}
         >
           <ul
