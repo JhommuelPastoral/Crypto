@@ -2,7 +2,7 @@ import GooeyNav from '../../DesignComponents/GooeyNav/GooeyNav.jsx'
 export default function LandingPage() {
 const items = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "Features", href: "#features" },
   { label: "Tokenomics", href: "#tokenomics" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "Whitepaper", href: "#whitepaper" },

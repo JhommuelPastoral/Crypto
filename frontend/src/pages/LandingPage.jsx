@@ -17,7 +17,7 @@ export default function LandingPage() {
       </section>
 
       {/* About Section Placeholder */}
-      <section id="about" className="max-h-screen px-6 py-20 pb-10 text-white bg-zinc-950">
+      <section id="features" className="max-h-screen px-6 py-20 pb-10 text-white bg-zinc-950">
         <AboutSection/>
       </section>
     </>
