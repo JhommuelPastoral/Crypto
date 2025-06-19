@@ -1,4 +1,3 @@
-import { set } from 'mongoose';
 import GooeyNav from '../../DesignComponents/GooeyNav/GooeyNav.jsx'
 import { useEffect, useState } from 'react';
 export default function Header() {
