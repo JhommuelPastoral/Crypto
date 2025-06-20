@@ -8,8 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card"
-
 import {auth, signInWithPopup, provider } from "../../firebase/firebase.auth.js"
+import {auth as fbAuth, signInWithPopup as fbSignIn, provider as fbProvider } from "../../firebase/facebook.auth.js"
 import { useMutation, useQueryClient } from "@tanstack/react-query"
 import {login} from '../lib/api.js'
 import toast from "react-hot-toast"
@@ -41,6 +41,16 @@ export default function LoginPage() {
     const photo = user.user.photoURL
     loginUser({email, name, photo})
   }
+
+  const handleFacebookSignIn = async () => {
+    const user = await fbSignIn(fbAuth, fbProvider)
+    const email = user.user.email
+    const name = user.user.displayName
+    const photo = user.user.photoURL
+    loginUser({email, name, photo})
+  }
+
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Card className="w-full max-w-sm">
@@ -54,7 +64,7 @@ export default function LoginPage() {
           </CardAction> */}
         </CardHeader>
         <CardContent className='space-y-3'>
-          <Button  variant="outline" className="w-full">
+          <Button  variant="outline" className="w-full" onClick={handleFacebookSignIn}>
             Login With Facebook
           </Button>
           <Button variant="outline" className="w-full cursor-pointer" onClick={handleGoogleSignIn}>
