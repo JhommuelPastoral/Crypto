@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: "https://crypto-f4su.onrender.com/",
+  origin: "https://crypto-f4su.onrender.com",
   credentials: true,
 };
 
